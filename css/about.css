@@ -1,0 +1,392 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    box-shadow: 2px 5px 4px rgba(14, 4, 4, 0.733);
+    background-color: white;
+    color: red;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    left: 0; 
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.link a:hover {
+    border-bottom: 1px solid blue;
+    padding-bottom: 3px;
+    color: blue;
+    transition: 0.3s;
+}
+
+header ul li a:focus {
+    color: orange;
+}
+
+
+header ul li {
+    margin-left: 30px;
+}
+
+#submit {
+    /* background-color: rgb(41, 41, 175); */
+    background-color: red;
+    color: white;
+    /* width: 50px; */
+    height: 30px;
+    margin-left: 20px;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+
+#submit:hover {
+    background-color: white;
+    color: red;
+    font-size: 15px;
+    border: 1px solid black;
+
+}
+
+/* .top-section {
+    height: 100vh;
+} */
+
+
+.about-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.about {
+    background: rgba(128, 128, 128, 0.4);
+    height: fit-content;
+    padding: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.content h1{
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+}
+
+.content h3{
+    font-size: 15px;
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.about-section h1 {
+    font-family: sans-serif;
+}
+
+.about-content {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-family: geneva;
+    padding: 15px;
+    display: flex;
+    line-height: 1.5;
+    height: 70vh;
+    align-items: center;
+}
+
+.about-content p {
+    font-size: 25px;
+}
+
+.text-section{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-section {
+    width: 50%;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.brands{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands h3{
+    padding: 0 0 15px 0;
+    font-size: 60px ;
+}
+
+.brand-logos{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;                  
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .img-fluid {
+    width: 55%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.logo .img-fluid .img-fit{
+    width: 50px;
+    height: 160px;
+}
+
+.woh{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.details{
+    width: 33%;
+    padding: 12px;
+    text-align: center;
+}
+
+.details h3 {
+    font-size: 30px;
+    font-family: "Mont-serrat", sans-serif;
+    color: #2e2e2e;
+}
+
+.details p {
+    font-size: 14px;
+}
+
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: linear-gradient(10deg,rgba(219, 214, 214, 0.658), rgba(255, 255, 255, 0.61)), url(../images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    opacity: 1;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.services-container {
+    opacity: 1;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.39);
+    color: black;
+    padding: 20px;
+}
+
+.foot {
+    text-align: center;
+}
+
+.foot i{
+    color: rgb(143, 8, 8);
+}
+
+.foot p {
+    font-size: 17px;
+    padding: 3px 0px;
+}
+
+.foot h3 {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .services-section{
+        padding: 21px 5px;
+    }
+
+    .about-content p {
+        font-size: 19px;
+    }
+
+    .about-content{
+        height: 60vh;
+    }
+
+    .about-section h1 {
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+
+    .details {
+        width: 30%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+
+    .woh {
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 426px){
+    header ul li {
+        margin-left: 10px;
+    }
+
+    header ul li a{
+         font-size: 13px;
+    }
+
+    #submit{
+        height: 24px;
+        margin-left: 7px;
+        padding: 5px 3px;
+    }
+
+    .logo{
+        font-size: 15px;
+    }
+
+    .content h1{
+        font-size: 50px;
+    }
+
+    .about-section h1 {
+        font-size: 20px;
+    }
+
+    .about-content{
+        flex-direction: column-reverse;
+        height: fit-content
+    }
+
+    .image-section{
+        width: 285px;
+    }
+
+    .services-container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #service{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .woh{
+        height: fit-content;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .details{
+        width: 35%;
+        margin-bottom: 10px;
+    }
+
+    .details h3 {
+        font-size: 18px;
+    }
+
+    .details p{
+        height: 50%;
+    }
+
+    .brand-logos{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .content h1 {
+        font-size: 32px;
+    }
+}

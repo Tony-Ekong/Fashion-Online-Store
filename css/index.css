@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    box-shadow: 2px 5px 4px rgba(160, 180, 247, 0.733);
+    background-color: white;
+    color: red;
+    padding: 10px;
+    display: flex;
+    width: 100%; 
+    position: fixed;
+    z-index: 1;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;                                               
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+header ul li a:hover {
+    border-bottom: 1px solid blue;
+    padding-bottom: 3px;
+    color: blue;
+    transition: 0.3s;
+}
+
+header ul li a:focus {
+    color: orange !important;
+}
+
+
+header ul li {
+    margin-left: 30px;
+}
+
+#submit {
+    /* background-color: rgb(41, 41, 175); */
+    background-color: red;
+    color: white;
+    /* width: 50px; */
+    height: 30px;
+    margin-left: 20px;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+
+#submit:hover {
+    background-color: white;
+    color: red;
+    font-size: 15px;
+    border: 1px solid black;
+
+}
+
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.link a:active {
+    color: orange;
+}
+
+
+.inner-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+
+}
+
+.image-1,
+.image-2 {
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-1:hover {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.616)), url(../images/man.png.jpg);
+    border: 1px solid rgb(144, 195, 252);
+    cursor: pointer;
+}
+
+.image-2:hover {
+    background-image:linear-gradient(45deg, rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.452)), url(../images/pexels-maryia-plashchynskaya-3615455.jpg);
+    border: 1px solid rgb(144, 195, 252);
+    cursor: pointer;
+}
+
+
+
+.image-1 {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.24)), url(../images/man.png.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-2 {
+    background-image: url(../images/pexels-maryia-plashchynskaya-3615455.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero-text {
+    font-size: 140px;
+    font-family: 'Aboreto', cursive;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 50px;
+
+}
+
+.best {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-content {
+    width: 100%;
+}
+
+.best-heading {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+}
+
+.best-para {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.container-advert {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.advert {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advert-img1 {
+    height: 50vh;
+    width: 64.5%;
+    background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.144)), url(../images/pexels-relab-12555811.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.advert-img2 {
+    height: 50vh;
+    width: 33.5%;
+    background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.459)), url(../images/pexels-sebastiaan-stam-1482476.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.advert-img2:hover, .advert-img1:hover{
+    cursor: pointer;
+}
+
+.advert-img2 h4{
+    text-align: center;
+}
+
+.advert-img2 p{
+    font-size: 29px;
+}
+
+.img {
+    padding: 0px 20px;
+}
+
+.collection {
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    margin-bottom: 10px;
+}
+
+.contact {
+    background-color: black;
+    height: 50vh;
+    width: 95%;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.email,
+.need-help {
+    width: 50%;
+    height: 50vh;
+    padding: 60px 0px 0px 20px;
+}
+
+
+.email .word1 {
+    font-size: 30px;
+}
+
+.email .word {
+    margin-top: 10px;
+    color: #aaa2a2;
+    font-size: 13px;
+}
+
+.word2{
+    font-size: 14px;
+}
+
+#email{
+    margin-top: 20px;
+    height: 40px;
+}
+
+#email {
+    width: 350px;
+}
+
+#enter {
+    width: 80px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    transition: 0.7s;
+    border-radius: 4px;
+}
+
+#enter:hover {
+    background-color: white;
+    color: blue;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.help {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.service {
+    color: #aaa2a2;
+    font-size: 13px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 10px;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.flex li{
+    font-size: 13px;
+    padding: 3px 0px;
+}
+
+li{
+    list-style: none;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.356);
+    color: black;
+
+    padding: 20px;
+}
+
+.foot {
+    text-align: center;
+}
+
+.foot i{
+    color: rgb(143, 8, 8);
+}
+
+.foot p {
+    font-size: 18px;
+    padding: 3px 0px;
+}
+
+.foot h3 {
+    font-size: 17px;
+}
+
+.last, footer{
+    color: black;
+    font-size: 15px;
+}
+
+/* tablet view */
+@media screen and (max-width: 769px){
+    header ul li a {
+        font-size: 16px;
+    }
+
+    .hero-text {
+        font-size: 84px;
+    }
+
+    .best {
+        height: 38vh;
+    }
+
+    .best-heading{
+        font-size: 37px;
+    }
+
+    .best-para {
+        font-size: 17px;
+    }
+
+    .advert-img2 p {
+        font-size: 22px;
+    }
+
+    .email .word1 {
+        font-size: 20px;
+    }
+
+    #email{
+        width: 330px;
+    }
+
+
+    #email {
+        margin-top: 15px;
+    } 
+
+    #enter {
+        width: 64px;
+        height: 29px;
+        margin-top: 3px;
+    }
+
+    .email, .need-help {
+      padding: 40px 0px 0px 20px;
+    }
+
+    .word2 {
+        font-size: 12px;
+    }    
+}
+
+@media screen and (max-width: 426px){
+    header{
+        width: 100%;
+    }
+
+    header ul li {
+        margin-left: 10px;
+    }
+
+    header ul li a {
+        font-size: 13px;
+    }
+
+    .inner-container{
+        flex-direction: column;
+    }
+
+    .image-1, .image-2{
+        width: 100%;
+    }
+
+    #submit{
+        margin-left: 10px;
+        border: none;
+        padding: 4px 4px;
+        height: 23px;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .image-1,.image-2{
+        height: 70vh;
+    }
+
+    .hero-text {
+        font-size: 48px;
+    }
+
+    .best-heading{
+        font-size: 25px;
+    }
+
+    .best-para{
+        font-size: 13px;
+    }
+
+    .advert{
+        flex-direction: column;
+    }
+
+    .advert-img1, .advert-img2{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #email{
+        width: 250px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+   
+    .contact{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .email, .need-help {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .help{
+        font-size: 25px;
+        margin-bottom: 3px;
+    }
+
+    .word2{
+        width: 70%;
+    }
+
+    .service{
+        margin-bottom: 10px;
+    }
+
+    .flex{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .div{
+        width: 35%;
+        margin-bottom: 10px;
+        /* text-align: center; */
+    }
+
+    .div h4{
+        font-size: 17px;
+    }
+    
+}
+
+@media screen and (max-width: 376px){
+    header ul li{
+        margin-left: 7px;
+    }
+    
+    #submit{
+        margin-left: 7px;
+    }
+}

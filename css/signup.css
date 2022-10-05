@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.flex-section {
+    display: flex;
+}
+
+
+.form-section {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+}
+
+.image {
+    width: 60%;
+    min-height: 100vh;
+    background-image: url(../images/pexels-the-lazy-artist-gallery-1342609.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.blue {
+    background: linear-gradient(90deg, rgba(0, 0, 255, 0.74), rgba(48, 48, 150, 0.904));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+}
+
+.pass {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+}
+
+#name {
+    padding: 1px 0px 1px 5px;
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid;
+}
+
+#phone {
+    padding: 1px 0px 1px 5px;
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid;
+}
+
+#email {
+    padding: 1px 0px 1px 5px;
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid;
+}
+
+.pass1 {
+    width: 49%;
+}
+
+.pass2 {
+    width: 49%;
+}
+
+#password {
+    height: 33px;
+    margin-bottom: 15px;
+    padding: 1px 0px 1px 5px;
+}
+
+
+#submit {
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(249, 13, 13);
+    color: rgb(240, 234, 234);
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+#submit:hover {
+    padding: 11px;
+    cursor: pointer;
+    box-shadow: black;
+    background-color: white;
+    color: red;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 43%;
+    height: 20%;
+}
+
+.login {
+    text-align: center;
+}
+
+.login a {
+    color: red;
+}
+
+#text {
+    font-size: 15px;
+}
+
+.back {
+    margin-bottom: 45px;
+}
+
+.tag {
+    text-decoration: none;
+    color: #cb1f39;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 769px) {
+    .form-section {
+        height: fit-content;
+        width: 50%;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .form {
+        width: 95%;
+    }
+
+    #submit {
+        margin-bottom: 5px;
+    }
+
+    .line {
+        margin-bottom: 5px;
+    }
+
+
+    h1 {
+        margin: 0 auto;
+        margin-bottom: 14px;
+        font-size: 15px;
+        width: 50%;
+    }
+
+    #name {
+        width: 95%;
+    }
+
+    #phone {
+        width: 95%;
+    }
+
+    #email {
+        width: 95%;
+    }
+
+    .pass1,
+    .pass2 {
+        width: 95%;
+    }
+
+    #password {
+        width: 100%;
+    }
+
+    .pass {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .image{
+        display: none;
+    }
+
+    .form-section{
+        width: 100%;
+        background-image:linear-gradient(45deg, rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.548)), url(../images/pexels-the-lazy-artist-gallery-1342609.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #text, .white, .or, .login{
+        color: white;
+    }
+
+    .blue {
+        background: linear-gradient(90deg, rgb(0, 195, 255), rgba(48, 109, 150, 0.986));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'EB Garamond', serif;
+        font-size: 25px;
+    }
+}
